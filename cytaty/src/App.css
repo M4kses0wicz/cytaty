@@ -1,0 +1,31 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+}
+
+.card {
+  color: #cecece;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 7px;
+}
+
+button {
+  width: 100%;
+  margin-top: 7px;
+  color: #202020;
+  background: #cecece;
+  border: #202020 1px solid;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:active {
+  transform: translateY(2px);
+}
