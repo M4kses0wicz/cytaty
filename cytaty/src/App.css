@@ -10,6 +10,44 @@ main {
 .card {
   color: #cecece;
   font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1150px){
+  .card{
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px){
+  .card{
+    width: 90%;
+    margin: 5%;
+  }
+
+  .card h1{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 200px){
+  .card{
+    width: 95%;
+    margin: 2.5%;
+  }
+
+  .card h1{
+    font-size: 24px;
+  }
+
+  .quote-text, .quote-author{
+    font-size: 11px;
+  }
+
+  button{
+    font-size: 12px;
+  }
 }
 
 h1 {
@@ -28,4 +66,32 @@ button {
 
 button:active {
   transform: translateY(2px);
+}
+
+textarea{
+  resize: vertical;
+}
+
+textarea, input{
+  margin-bottom: 7px;
+  background: #202020;
+  color: #cecece;
+  border: none;
+  border-bottom: 2px solid #cecece;
+    background: #cecece07;
+    padding: 3px 0px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  background: #cecece0a;
+}
+
+h2{
+  margin-top: 25px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
 }
